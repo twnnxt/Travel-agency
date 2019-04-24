@@ -1,0 +1,17 @@
+.cartDetailBorder {
+    border-bottom: 3px solid $goTourYellow;
+    @include pad() {
+        border: 0;
+    }
+}
+
+.phonePriceBorder {
+    @include pad() {
+        border-top: 1px solid #dee2e6;
+        border-bottom: 3px solid $goTourYellow;
+    }
+}
+
+.delet {
+    cursor: pointer;
+}

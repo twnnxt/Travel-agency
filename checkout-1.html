@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-hang=tw">
+
+<head>
+    <meta charset="UTF-8">
+    <title>晃晃旅遊GoTour</title>
+    <link rel="shortcut icon" href="img/logotitle.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="晃晃旅遊GoTour" />
+    <meta name="keywords" content="晃晃旅遊,晃晃旅遊GoTour,GoTour,晃晃,旅行,旅行社,海島之旅" />
+    <meta property="og:title" content="晃晃旅遊GoTour" />
+    <meta property="og:description" content="The Best Trip Ever" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.GoTour.com">
+    <meta property="og:image" content="img/logotitle.png" />
+    <meta http-equiv="X-UA-Competible" content="IE-Edge" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="home.html"><img src="img/logo2.png" alt="logo" width="50" height="50"></a>
+            <a class="nav-item nav-link transform-scale ml-auto d-block d-md-none text-light cart" href="cart.html">
+                <i class="fas fa-shopping-cart fa-x"></i>
+                <span class="badge badge-danger cartBadge">2</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="font-size: 1rem;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link transform-scale active" href="home.html">Home</a>
+                    <a class="nav-item nav-link shake text-primary" href="samui.html">蘇美樂活遊
+                    </a>
+                    <a class="nav-item nav-link d-none d-md-block text-light transform-scale cart" href="cart.html">
+                        <i class="fas fa-shopping-cart" style="font-size: 1.5rem"></i>
+                        <span class="badge badge-danger cartBadge">2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="container pt-5">
+            <div class="checkoutLine mb-5 ">
+                <div class="checkoutCircle checkoutStep1 onStep"></div>
+                <div class="checkoutCircle checkoutStep2"></div>
+                <div class="checkoutCircle checkoutStep3"></div>
+            </div>
+            <div class="row">
+                <section class="col-lg-7 mb-3">
+                    <div class="bg-goTourYellow text-center py-2 mb-3">基本資料</div>
+                    <form action="checkout-2.html" class="needs-validation" novalidate>
+                        <div class="form-row">
+                            <div class="col-lg-6 form-group">
+                                <label for="name">*姓名:</label>
+                                <input id="name" type="text" class="form-control" placeholder="請輸入姓名" required>
+                                <span class="invalid-feedback">姓名欄不可為空</span>
+                            </div>
+                            <div class="col-lg-6 form-group">
+                                <label for="tel">*電話:</label>
+                                <input id="tel" type="tel" class="form-control" placeholder="09XXXXXXXX" required>
+                                <span class="invalid-feedback">電話號碼欄不可為空</span>
+                            </div>
+                            <div class="col-12 form-group">
+                                <label for="Email">*Email:</label>
+                                <input id="Email" type="email" class="form-control" placeholder="name@example.com" required>
+                                <span class="invalid-feedback">Email欄不可為空</span>
+                            </div>
+                            <div class="col-lg-4 form-group">
+                                <label for="nation">*國家:</label>
+                                <select id="nation" class="form-control" required>
+                                    <option value="tw">台灣</option>
+                                    <option value="us">美國</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-4 form-group">
+                                <label for="city">*城市:</label>
+                                <select id="city" class="form-control" required>
+                                    <option value="tw">台中市</option>
+                                    <option value="hl">花蓮縣</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-4 form-group">
+                                <label for="ZIP">*郵遞區號:</label>
+                                <input id="ZIP" type="text" class="form-control" placeholder="ZIP" required>
+                            </div>
+                            <div class="col-12 form-group">
+                                <label for="address">*地址:</label>
+                                <input id="address" type="text" class="form-control" placeholder="台北市台灣路123號" required>
+                                <span class="invalid-feedback">地址欄不可為空</span>
+                            </div>
+                            <div class="ml-auto">
+                                <a href="cart.html" role="button" class="btn btn-sm btn-secondary mr-2">回上頁</a>
+                                <button type="submit" role="button" class="btn btn-sm btn-goTourOrange">下一步</button>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+                <aside class="col-lg-5 d-none d-md-block">
+                    <div class="row">
+                        <div class="col">
+                            <div class="bg-goTourYellow text-center mb-3">總覽</div>
+                            <dl class="row">
+                                <dt class="col-7">行程數量</dt>
+                                <dd class="col-5 text-danger text-right">2</dd>
+                                <dt class="col-7">總金額</dt>
+                                <dd class="col-5 text-danger text-right">$85,776</dd>
+                                <dt class="col-7">獲得積分</dt>
+                                <dd class="col-5 text-danger text-right">15,000</dd>
+                            </dl>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col">
+                            <div class="bg-goTourYellow text-center mb-3">旅行箱</div>
+                            <ul class="row list-unstyled">
+                                <li class="col-6">
+                                    <div class="w-100 h-100 bg-img" style="background-image: url(img/samui.jpg);"></div>
+                                </li>
+                                <li class="col-6">
+                                    <div class="p">蘇美島5天4夜雪崩式特賣(2)</div>
+                                    <div class="pt-2">$77,776</div>
+                                </li>
+                            </ul>
+                            <ul class="row list-unstyled">
+                                <li class="col-6">
+                                    <div class="w-100 h-100 bg-img" style="background-image: url(img/Orchidisland.jpg);"></div>
+                                </li>
+                                <li class="col-6">
+                                    <div class="p">蘭嶼綠島3天2夜(1)</div>
+                                    <div class="pt-2">$8,000</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-light d-flex flex-column justify-content-center align-items-center" style="min-height: 100px;">
+        <div class="p">
+            Copright © 2019 by 晃晃旅遊
+        </div>
+        <div class="h6">
+            <span><a href="#"><i class="fab fa-facebook"></i></a></span>
+            <span><a href="#"><i class="fab fa-twitter-square"></i></a></span>
+            <span><a href="#"><i class="fab fa-instagram"></i></a></span>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="JS/js.js"></script>
+</body>
+
+</html>

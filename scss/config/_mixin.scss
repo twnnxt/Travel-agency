@@ -1,0 +1,57 @@
+// breakPoint
+@mixin pad {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin iphone5 {
+    @media(max-width: 360px) {
+        @content;
+    }
+}
+
+@mixin pc-s {
+    @media(max-width: 992px) {
+        @content;
+    }
+}
+
+// breakPointEnd
+
+@mixin bg-img-url ($img) {
+	background-image: url('../img/#{$img}');
+    background-position: center center;
+    background-size: cover;
+}
+
+%bg-img {
+	background-position: center center;
+    background-size: cover;
+}
+
+@mixin checkoutFont($width, $translateX) {
+    position: absolute;
+    width: #{$width}rem;
+    transform: translate($translateX, 50%);
+
+    @include pad () {
+        display: none;
+    }
+}
+
+%checkout3TextLine {
+    content: "";
+    position: absolute;
+    top: 1.25rem;
+    transform: translateY(50%);
+    height: 5px;
+    width: 4rem;
+    background-color: #fff;
+}
+
+%hide-text {
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+}

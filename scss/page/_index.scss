@@ -1,0 +1,108 @@
+html,
+.fullsize {
+    height: 100vh;    
+}
+
+.pb-s {
+    padding-bottom: 10px;
+}
+
+.fullsize {
+    @include bg-img-url('nattu-adnan-1150339-unsplash.jpg');
+}
+
+.headArea {
+    position: relative;
+    max-height: $heightL;
+
+    @include pad() {
+        max-height: none;
+    }
+}
+
+.btnEnter {
+    position: absolute;
+    right: 0;
+    bottom: 24px;
+
+    @include pad() {
+        position: relative;
+        bottom: 0;
+        padding-top: 24px;
+    }
+
+    .arrow {
+        animation-name: twinkling;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+}
+
+.welcomePageImg-1 {
+    @include bg-img-url('cristian-palmer-481519-unsplash.jpg');
+    min-height: $heightM;
+}
+
+.welcomePageImg-2 {
+    @include bg-img-url('jcob-nasyr-1389829-unsplash.jpg');
+    min-height: $heightM;
+}
+
+.welcomePageImg-3 {
+    @include bg-img-url('alessandra-caretto-620159-unsplash.jpg');
+    min-height: $heightS;
+}
+
+.welcomePageImg-4 {
+    @include bg-img-url('james-connolly-363041-unsplash.jpg');
+}
+
+.welcomePageImg-5 {
+    @include bg-img-url('toa-heftiba-270794-unsplash.jpg');
+    min-height: $heightL;
+
+    @include pad() {
+        max-height: $heightXL;
+    }
+}
+
+.welcomePageImg-6 {
+    @include bg-img-url('sean-o-406693-unsplash.jpg');
+    min-height: $heightL;
+    @include pad() {
+        max-height: $heightXL;
+    }
+}
+
+.tourStamp {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    transform: translate(0, 0);
+    opacity: 0;
+    transition: opacity 8s, transform .5s;
+
+    &.show {
+        opacity: 1;
+    }
+
+    &:hover {
+        transform: translate(-5px, -5px);
+    }
+}
+
+
+.box-shadow {
+    border: 0;
+    transition: all .3s;
+
+    &:hover {
+        border: 10px solid #fff;
+
+        @include pad() {
+            border: 0;
+        }
+    }
+}

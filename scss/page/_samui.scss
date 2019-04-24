@@ -1,0 +1,35 @@
+.samuiBg {
+	background-image: url(../img/jcob-nasyr-1389829-unsplash.jpg); 
+	background-attachment: fixed;
+    height: 100%;
+    font-weight: bold;
+    font-family: 'cwTeXYen', 'Indie Flower', cursive, serif;
+}
+
+.subTitleV-center {
+    height: 127.2px;
+    line-height: 127.2px;
+
+    @include pad () {
+        height: auto;
+        line-height: 1rem;
+    }
+}
+
+.samuiCardRight {
+    .samuiTextLeft {
+        left: -300px;
+        top: 15%;
+    }
+}
+
+.samuiCardLeft {
+    .samuiTextRight {
+        right: -300px;
+        top: 15%;
+    }
+}
+
+.border-bottom-3{
+	border-bottom: 3px solid;
+}

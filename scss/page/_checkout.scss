@@ -1,0 +1,112 @@
+.checkoutLine {
+    position: relative;
+    width: 50%;
+    height: 3px;
+    left: 25%;
+    background-color: $goTourYellow;
+}
+
+.checkoutCircle {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #EAF0ED;
+    border: 3px solid $goTourYellow;
+    transform: translate(-50%, -50%);
+    color: #ced4da;
+
+    &.checkoutStep1 {
+        left: 0;
+
+        &::before {
+            content: "基本資料";
+            @include checkoutFont(4, -37.5%);
+        }
+    }
+
+    &.checkoutStep2 {
+        left: 50%;
+
+        &::before {
+            content: "付款資料";
+            @include checkoutFont(4, -37.5%);
+        }
+    }
+
+    &.checkoutStep3 {
+        left: 100%;
+
+        &::before {
+            content: "完成";
+            @include checkoutFont(2, -25%);
+        }
+    }
+}
+
+.onStep {
+    width: .5rem;
+    height: .5rem;
+    color: #212529;
+
+    &::before {
+        transform: translate(-47%, 25%) !important;
+    }
+}
+
+.doneStep {
+    background-color: $goTourYellow;
+
+}
+
+.checkout3Bg {
+    background-image: url(../img/franciele-cunha-596987-unsplash.jpg);
+    height: calc(100vh - 358px);
+    width: auto;
+	background-position: bottom left;
+	background-size: cover;
+}
+
+.h2-xs {
+    position: relative;
+
+    &::before {
+        left: -4.5rem;
+        @extend %checkout3TextLine;
+    }
+
+    &::after {
+        right: -4.5rem;
+        @extend %checkout3TextLine;
+    }
+
+    @include pad () {
+        &::before {
+            left: -2.5rem;
+            width: 2rem;
+        }
+
+        &::after {
+            right: -2.5rem;
+            width: 2rem;
+        }
+    }
+
+    @include iphone5 () {
+        font-size: 2rem;
+
+        &::before {
+            height: 3px;
+            top: 1rem;
+            transform: translateY(50%);
+        }
+
+        &::after {
+            height: 3px;
+            top: 1rem;
+            transform: translateY(50%);
+        }
+    }
+
+
+}

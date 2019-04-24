@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-hang=tw">
+
+<head>
+    <meta charset="UTF-8">
+    <title>晃晃旅遊GoTour</title>
+    <link rel="shortcut icon" href="img/logotitle.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="晃晃旅遊GoTour" />
+    <meta name="keywords" content="晃晃旅遊,晃晃旅遊GoTour,GoTour,晃晃,旅行,旅行社,海島之旅" />
+    <meta property="og:title" content="晃晃旅遊GoTour" />
+    <meta property="og:description" content="The Best Trip Ever" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.GoTour.com">
+    <meta property="og:image" content="img/logotitle.png" />
+    <meta http-equiv="X-UA-Competible" content="IE-Edge" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" id="mainNavbar">
+        <div class="container">
+            <h1 class="text-hide">晃晃旅遊 Go tour
+                <a class="navbar-brand" href="home.html"><img src="img/logo2.png" alt="logo" width="50" height="50"></a>
+            </h1>
+            <a class="nav-item nav-link transform-scale ml-auto d-block d-md-none text-light cart" href="cart.html">
+                <i class="fas fa-shopping-cart fa-x"></i>
+                <span class="badge badge-danger cartBadge">2</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="font-size: 1rem;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link transform-scale active" href="home.html">首頁<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link shake text-primary" href="samui.html">蘇美樂活遊</a>
+                    <a class="nav-item nav-link transform-scale" href="#loginModal" data-toggle="modal">登入</a>
+                    <a class="nav-item nav-link transform-scale" href="#registerModal"  data-toggle="modal">注冊</a>
+                    <a class="nav-item nav-link d-none d-md-block text-light transform-scale cart" href="cart.html">
+                        <i class="fas fa-shopping-cart" style="font-size: 1.5rem"></i>
+                        <span class="badge badge-danger cartBadge">2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="homeBg">
+        <div class="container d-none d-sm-block">
+            <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#homeCarousel" data-slide-to="1" class="active"></li>
+                    <li data-target="#homeCarousel" data-slide-to="2"></li>
+                    <li data-target="#homeCarousel" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="samui.html" class="carouselImg d-block bg-img" style="background-image: url(img/b55cf83d-25a7-40a3-b4fa-fe00ced0324d.jpg);">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#" class="carouselImg d-block bg-img" style="background-image: url(img/11609.jpg);">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#" class="carouselImg d-block bg-img" style="background-image: url(img/11773.jpg);">
+                        </a>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <section class="pt-4">
+            <div class="container">
+                <h6 class="border-bottom border-light text-light pb-2">本月熱銷</h6>
+                <div class="sectionBrand">
+                    <div class="row">
+                        <div class="col-sm-4 brandHide brandCardHover">
+                            <a href="#">
+                                <img class="card-img w-100 h-100 brandImg" src="img/11604.jpg">
+                            </a>
+                        </div>
+                        <div class="col-sm-4 brandHide brandCardHover">
+                            <a href="#">
+                                <img class="card-img w-100 h-100 brandImg" src="img/11761.jpg">
+                            </a>
+                        </div>
+                        <div class="col-sm-4 brandHide brandCardHover">
+                            <a href="#">
+                                <img class="card-img w-100 h-100 brandImg" src="img/7ddd59bc-7ea6-4bbf-a377-1e27eb8db169.jpg" width="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-4">
+            <div class="container">
+                <h6 class="border-bottom border-light text-light pb-2">地區分類</h6>
+                <div class="sectionBrand">
+                    <div class="brandHide">
+                        <a href="#">
+                            <h6 class="text-goTourYellow mb-2 d-inline-block border-bottom border-goTourYellow">亞洲</h6>
+                        </a>
+                        <div class="card-group card-deck">
+                            <a href="#" class="card border-0 rel brandCardHover">
+                                <img src="img/00016154.JPG" alt="" class="card-img-top brandImg" style="min-height: 100px">
+                                <div class="card-body brandBody h-100 d-flex flex-column justify-content-between">
+                                    <p class="text-sm">Lorem ipsum dolor sit </p>
+                                    <div>
+                                        <dfn>$</dfn><strong class="text-danger">29,599</strong> 元起
+                                    </div>
+                                </div>
+                                <i class="far fa-heart likeIcon abs"></i>
+                            </a>
+                            <a href="#" class="card border-0 rel brandCardHover">
+                                <img src="img/11761.jpg" alt="" class="card-img-top brandImg" style="min-height: 100px">
+                                <div class="card-body brandBody h-100 d-flex flex-column justify-content-between">
+                                    <p class="text-sm">Lorem ipsum dolor sit Lorem ipsum dolor.</p>
+                                    <div>
+                                        <dfn>$</dfn><strong class="text-danger">9,599</strong> 元起
+                                    </div>
+                                </div>
+                                <i class="far fa-heart likeIcon abs"></i>
+                            </a>
+                            <a href="#" class="card border-0 rel brandCardHover">
+                                <img src="img/221494.jpg" alt="" class="card-img-top brandImg" style="min-height: 100px">
+                                <div class="card-body brandBody h-100 d-flex flex-column justify-content-between">
+                                    <p class="text-sm">Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, dolorum.</p>
+                                    <div>
+                                        <dfn>$</dfn><strong class="text-danger">39,999</strong> 元起
+                                    </div>
+                                </div>
+                                <i class="far fa-heart likeIcon abs"></i>
+                            </a>
+                            <a href="#" class="card border-0 rel brandCardHover">
+                                <img src="img/11761.jpg" alt="" class="card-img-top brandImg" style="min-height: 100px">
+                                <div class="card-body brandBody h-100 d-flex flex-column justify-content-between">
+                                    <p class="text-sm">Lorem ipsum dolor sit Lorem ipsum dolor sit amet.</p>
+                                    <div>
+                                        <dfn>$</dfn><strong class="text-danger">99,999</strong> 元起
+                                    </div>
+                                </div>
+                                <i class="far fa-heart likeIcon abs"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="text-right d-block">顯示更多<i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                    <div class="brandHide py-5">
+                        <a href="#">
+                            <h6 class="text-goTourYellow mb-2 d-inline-block border-bottom border-goTourYellow">非洲</h6>
+                        </a>
+                        <div class="card-group card-deck">
+                            <a href="#" class="card border-0 rel brandCardHover">
+                                <img src="img/00016154.JPG" alt="" class="card-img-top brandImg" style="min-height: 100px">
+                                <div class="card-body brandBody h-100 d-flex flex-column justify-content-between">
+                                    <p class="text-sm">Lorem ipsum dolor sit </p>
+                                    <div>
+                                        <dfn>$</dfn><strong class="text-danger">29,599</strong> 元起
+                                    </div>
+                                </div>
+                                <i class="far fa-heart likeIcon abs"></i>
+                            </a>
+                            <a href="#" class="card border-0 rel brandCardHover">
+                                <img src="img/11761.jpg" alt="" class="card-img-top brandImg" style="min-height: 100px">
+                                <div class="card-body brandBody h-100 d-flex flex-column justify-content-between">
+                                    <p class="text-sm">Lorem ipsum dolor sit Lorem ipsum dolor.</p>
+                                    <div>
+                                        <dfn>$</dfn><strong class="text-danger">9,599</strong> 元起
+                                    </div>
+                                </div>
+                                <i class="far fa-heart likeIcon abs"></i>
+                            </a>
+                            <a href="#" class="card border-0 rel brandCardHover">
+                                <img src="img/221494.jpg" alt="" class="card-img-top brandImg" style="min-height: 100px">
+                                <div class="card-body brandBody h-100 d-flex flex-column justify-content-between">
+                                    <p class="text-sm">Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, dolorum.</p>
+                                    <div>
+                                        <dfn>$</dfn><strong class="text-danger">39,999</strong> 元起
+                                    </div>
+                                </div>
+                                <i class="far fa-heart likeIcon abs"></i>
+                            </a>
+                            <a href="#" class="card border-0 rel brandCardHover">
+                                <img src="img/11604.jpg" alt="" class="card-img-top brandImg" style="min-height: 100px">
+                                <div class="card-body brandBody h-100 d-flex flex-column justify-content-between">
+                                    <p class="text-sm">Lorem ipsum dolor sit Lorem ipsum dolor sit amet.</p>
+                                    <div>
+                                        <dfn>$</dfn><strong class="text-danger">99,999</strong> 元起
+                                    </div>
+                                </div>
+                                <i class="far fa-heart likeIcon abs"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="text-right d-block">顯示更多<i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                    <div class="brandHide">
+                        <a href="#">
+                            <h6 class="text-goTourYellow mb-2 d-inline-block border-bottom border-goTourYellow">歐美紐澳</h6>
+                        </a>
+                        <div class="card-group card-deck">
+                            <a href="#" class="card border-0 rel brandCardHover">
+                                <img src="img/00016154.JPG" alt="" class="card-img-top brandImg" style="min-height: 100px">
+                                <div class="card-body brandBody h-100 d-flex flex-column justify-content-between">
+                                    <p class="text-sm">Lorem ipsum dolor sit </p>
+                                    <div>
+                                        <dfn>$</dfn><strong class="text-danger">29,599</strong> 元起
+                                    </div>
+                                </div>
+                                <i class="far fa-heart likeIcon abs"></i>
+                            </a>
+                            <a href="#" class="card border-0 rel brandCardHover">
+                                <img src="img/11761.jpg" alt="" class="card-img-top brandImg" style="min-height: 100px">
+                                <div class="card-body brandBody h-100 d-flex flex-column justify-content-between">
+                                    <p class="text-sm">Lorem ipsum dolor sit Lorem ipsum dolor.</p>
+                                    <div>
+                                        <dfn>$</dfn><strong class="text-danger">9,599</strong> 元起
+                                    </div>
+                                </div>
+                                <i class="far fa-heart likeIcon abs"></i>
+                            </a>
+                            <a href="#" class="card border-0 rel brandCardHover">
+                                <img src="img/221494.jpg" alt="" class="card-img-top brandImg" style="min-height: 100px">
+                                <div class="card-body brandBody h-100 d-flex flex-column justify-content-between">
+                                    <p class="text-sm">Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, dolorum.</p>
+                                    <div>
+                                        <dfn>$</dfn><strong class="text-danger">39,999</strong> 元起
+                                    </div>
+                                </div>
+                                <i class="far fa-heart likeIcon abs"></i>
+                            </a>
+                            <a href="#" class="card border-0 rel brandCardHover">
+                                <img src="img/11761.jpg" alt="" class="card-img-top brandImg" style="min-height: 100px">
+                                <div class="card-body brandBody h-100 d-flex flex-column justify-content-between">
+                                    <p class="text-sm">Lorem ipsum dolor sit Lorem ipsum dolor sit amet.</p>
+                                    <div>
+                                        <dfn>$</dfn><strong class="text-danger">99,999</strong> 元起
+                                    </div>
+                                </div>
+                                <i class="far fa-heart likeIcon abs"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="text-right d-block">顯示更多<i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h6 class="border-bottom border-light text-light mb-4 pb-2">為甚麼選擇晃晃?</h6>
+                        <div class="sectionBrand text-light text-md-black">
+                            <div class="form-row">
+                                <div class="col-md-6 d-flex">
+                                    <i class="fa fa-globe fa-2x mr-2"></i>
+                                    <div>
+                                        <h6 class="brandItemTItle">遍布全球</h6>
+                                        <p>全球數千間合作廠商，頂尖團隊規劃優質行程，旅遊商品陣容完整、選擇多元。</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-flex">
+                                    <i class="fa fa-plane fa-2x mr-2"></i>
+                                    <div>
+                                        <h6 class="brandItemTItle">精緻旅程</h6>
+                                        <p>獨家安排深度旅遊路線、各國最新景點，優質行程推陳出新，熱門主題旅遊話題不斷。</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-flex">
+                                    <i class="fa fa-book fa-2x mr-2"></i>
+                                    <div>
+                                        <h6 class="brandItemTItle">專業規劃</h6>
+                                        <p>高標準策劃旅程細節，親臨嚴選交通食宿，悉心安排主題活動。</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-flex">
+                                    <i class="fa fa-user fa-2x mr-2"></i>
+                                    <div>
+                                        <h6 class="brandItemTItle">優質服務</h6>
+                                        <p>全台服務據點提供專業旅遊諮詢，量身選擇合適的旅遊行程，服務規格超越您的期待。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="col-md-4">
+                        <h6 class="border-bottom border-light text-light mb-4 pb-2">刷卡享優惠</h6>
+                        <div class="">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <a href="#" class="text-sm">
+                                        <img class="card-img" src="img/11738.jpg" height="140">
+                                        玉山卡友再加送好禮，每房一張「當地電話卡」內含8日無限上網
+                                    </a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a href="#">
+                                        <img class="card-img" src="img/180328-EC-750X452-bank.jpg" height="140">
+                                    </a>
+                                    <div class="d-flex flex-lg-column flex-row justify-content-between">
+                                        <a href="#" class="text-sm">
+                                            <div class="badge badge-pill badge-warning">中信</div>
+                                            <div>天天9折</div>
+                                        </a>
+                                        <a href="#" class="text-sm">
+                                            <div class="badge badge-pill badge-warning">國泰</div>
+                                            <div>周二85折</div>
+                                        </a>
+                                        <a href="#" class="text-sm">
+                                            <div class="badge badge-pill badge-warning">玉山</div>
+                                            <div>周二58折</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="border-bottom border-light text-light my-4 pb-2">以愛之名</h6>
+                            <p class="text-light">旅行者每花費$100，本公司捐出$50予各大社福機構</p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h6 class="border-bottom border-light mb-4 text-light">合作廠商</h6>
+                <div class="sectionBrand">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <a href="#">
+                                <img class="card-img w-100 h-100" src="img/11442.jpg">
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="#">
+                                <img class="card-img w-100 h-100" src="img/11178.png">
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="#">
+                                <img class="card-img w-100 h-100 imgExchange" src="img/7ddd59bc-7ea6-4bbf-a377-1e27eb8db169.jpg" data-brandimg="img/d2f785dd-b01c-476e-bff6-c2f560ee2aa9.jpg">
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="#">
+                                <img class="card-img w-100 h-100" src="img/11435.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="fa fa-angle-up arrowUp"></div>
+    </div>
+    <footer class="bg-light d-flex flex-column justify-content-center align-items-center" style="min-height: 100px;">
+        <div class="p">
+            Copright © 2019 by 晃晃旅遊
+        </div>
+        <div class="h6">
+            <span><a href="#"><i class="fab fa-facebook"></i></a></span>
+            <span><a href="#"><i class="fab fa-twitter-square"></i></a></span>
+            <span><a href="#"><i class="fab fa-instagram"></i></a></span>
+        </div>
+    </footer>
+    <!-- Modal Login-->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <form action="" class="modal-dialog needs-validation" role="document" novalidate>
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-light">
+                    <h5 class="modal-title" id="loginModalLabel">登入服務</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="lgEmail">請輸入e-mail*</label>
+                        <input type="email" id="lgEmail" class="form-control" placeholder="name@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lgPsw">請輸入密碼*</label>
+                        <input type="password" id="lgPsw" class="form-control" placeholder="請輸入密碼" required>
+                    </div>
+                    <div class="form-check .form-check-inline">
+                        <input type="checkbox" id="rm" class="form-check-input">
+                        <label for="rm" class="form-check-label">記住帳號</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#registerModal" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">還沒有帳號?</a>
+                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">取消</button>
+                    <button type="submit" id="login" class="btn btn-primary btn-sm">登入</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- Modal Register -->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <form action="" class="modal-dialog modal-lg needs-validation" novalidate role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-light">
+                    <h5 class="modal-title" id="registerModalLabel">註冊服務</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>會員條款</h3>
+                                <p>會員同意於使用本服務時一切交易之意思表示皆以電子文件作為表示方法，倘會員於各項服務與功能等頁面點選同意或確認等功能鍵時，即視為會員正式之意思表示。</p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="rgEmail">請輸入e-mail*</label>
+                                    <input type="email" id="rgEmail" class="form-control" placeholder="name@example.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="rgPsw">請輸入密碼*</label>
+                                    <input type="password" id="rgPsw" class="form-control" placeholder="請輸入密碼" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#loginModal" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">已有帳號?</a>
+                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">取消</button>
+                    <button type="submit" id="register" class="btn btn-primary btn-sm">註冊</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="JS/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="JS/js.js"></script>
+</body>

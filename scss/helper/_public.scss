@@ -1,0 +1,20 @@
+
+//Position
+.rel {
+    position: relative;
+}
+
+.abs {
+    position: absolute;
+}
+
+//Font
+.text-sm {
+    font-size: .8rem;
+}
+
+.text-md-black {
+	@include pad () {
+		color: #000 !important;
+	}
+}

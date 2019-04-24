@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-hang=tw">
+
+<head>
+    <meta charset="UTF-8">
+    <title>晃晃旅遊GoTour</title>
+    <link rel="shortcut icon" href="img/logotitle.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="晃晃旅遊GoTour" />
+    <meta name="keywords" content="晃晃旅遊,晃晃旅遊GoTour,GoTour,晃晃,旅行,旅行社,海島之旅" />
+    <meta property="og:title" content="晃晃旅遊GoTour" />
+    <meta property="og:description" content="The Best Trip Ever" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.GoTour.com">
+    <meta property="og:image" content="img/logotitle.png" />
+    <meta http-equiv="X-UA-Competible" content="IE-Edge" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="home.html"><img src="img/logo2.png" alt="logo" width="50" height="50"></a>
+            <a class="nav-item nav-link transform-scale ml-auto d-block d-md-none text-light cart active" href="cart.html">
+                <i class="fas fa-shopping-cart fa-x"></i>
+                <span class="badge badge-danger cartBadge">2</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="font-size: 1rem;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link transform-scale" href="home.html">首頁</a>
+                    <a class="nav-item nav-link shake text-primary" href="samui.html">蘇美樂活遊
+                    </a>
+                    <a class="nav-item nav-link d-none d-md-block text-light transform-scale cart active" href="cart.html">
+                        <i class="fas fa-shopping-cart" style="font-size: 1.5rem"></i>
+                        <span class="badge badge-danger cartBadge">2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="container pt-3 ">
+            <div class="text-center">
+                <section class="py-2 bg-goTourYellow">
+                    <div class="d-none d-md-block">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-7">行程/價格</div>
+                            <div class="col-md-2">人數</div>
+                            <div class="col-md-2">小計</div>
+                        </div>
+                    </div>
+                    <div class="p d-block d-md-none">您的旅行箱</div>
+                </section>
+                <section class="cartDetailBorder pt-3">
+                    <ul class="row list-unstyled">
+                        <li class="col-6 col-md-3">
+                            <a class="d-block w-100 h-100 bg-img" href="samui.html" style="background-image: url(img/samui.jpg);"></a>
+                        </li>
+                        <li class="col-6 d-flex flex-column flex-md-row align-items-md-center">
+                            <div class="col-md-8">
+                                <div>
+                                    <a href="samui.html">蘇美島5天4夜雪崩式特賣<span class="badge badge-danger rounded-pill">搶購中</span>
+                                    </a>
+                                </div>
+                                <div class="pt-2">
+                                    $38,888
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group pt-3">
+                                    <label for="personNumber" class="sr-only">選擇人數</label>
+                                    <select class="form-control" id="personNumber">
+                                        <option value="1">1人</option>
+                                        <option value="2" selected>2人</option>
+                                        <option value="3">3人</option>
+                                        <option value="4">4人</option>
+                                        <option value="5">5人</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-3 d-flex align-items-md-center phonePriceBorder mt-3 py-3 mt-md-0 py-md-0">
+                            <div class="col-10 col-md-8 d-flex justify-content-end justify-content-md-center">$77,776</div>
+                            <div class="col-2 col-md-4">
+                                <div class="delet transform-scale" data-target="#d-1">
+                                    <i class="far fa-trash-alt"></i>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="cartDetailBorder pt-3">
+                    <ul class="row list-unstyled">
+                        <li class="col-6 col-md-3">
+                            <a class="d-block w-100 h-100 bg-img" href="#" style="background-image: url(img/Orchidisland.jpg);">
+                            </a>
+                        </li>
+                        <li class="col-6 d-flex flex-column flex-md-row align-items-md-center">
+                            <div class="col-md-8">
+                                <div>
+                                    <a href="samui.html">蘭嶼綠島3天2夜</a>
+                                </div>
+                                <div class="pt-2">
+                                    $8,000
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group pt-3">
+                                    <label for="personNumber" class="sr-only">選擇人數</label>
+                                    <select class="form-control" id="personNumber">
+                                        <option value="1" selected>1人</option>
+                                        <option value="2">2人</option>
+                                        <option value="3">3人</option>
+                                        <option value="4">4人</option>
+                                        <option value="5">5人</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-3 d-flex align-items-md-center phonePriceBorder mt-3 py-3 mt-md-0 py-md-0">
+                            <div class="col-10 col-md-8 d-flex justify-content-end justify-content-md-center">$8,000</div>
+                            <div class="col-2 col-md-4">
+                                <div class="delet hidden-xs transform-scale" data-target="#d-2">
+                                    <i class="far fa-trash-alt"></i>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="my-3">
+                <div class="form-row">
+                    <div class="col-md-8">
+                        <div class="text-center">注意事項</div>
+                        <div>
+                            <ul>
+                                <li>本公司所有票證均為電子票證</li>
+                                <li>各行程人數未滿15人，可能無法成團，將於一週內通知退款事宜</li>
+                                <li>出團後，領隊保有依據現場狀況臨時變更行程權利</li>
+                                <li>如需代辦護照，請來電或Email告知</li>
+                                <li>如有任何特殊需求，請來電或Email告知</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bg-goTourYellow text-center mb-3">總覽</div>
+                        <dl class="row">
+                            <dt class="col-7">行程數量</dt>
+                            <dd class="col-5 text-danger text-right">2</dd>
+                            <dt class="col-7">總金額</dt>
+                            <dd class="col-5 text-danger text-right">$85,776</dd>
+                            <dt class="col-7">獲得積分</dt>
+                            <dd class="col-5 text-danger text-right">15,000</dd>
+                        </dl>
+                        <div class="text-right">
+                            <a href="home.html" role="button" class="btn btn-secondary btn-sm">繼續購物</a>
+                            <a href="checkout-1.html" role="button" class="btn btn-goTourOrange btn-sm">結帳</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-light d-flex flex-column justify-content-center align-items-center" style="min-height: 100px;">
+        <div class="p">
+            Copright © 2019 by 晃晃旅遊
+        </div>
+        <div class="h6">
+            <span><a href="#"><i class="fab fa-facebook"></i></a></span>
+            <span><a href="#"><i class="fab fa-twitter-square"></i></a></span>
+            <span><a href="#"><i class="fab fa-instagram"></i></a></span>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="JS/js.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,526 @@
+@charset "UTF-8";
+.bg-img {
+  background-position: center center;
+  background-size: cover; }
+
+.h2-xs::before, .h2-xs::after {
+  content: "";
+  position: absolute;
+  top: 1.25rem;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  height: 5px;
+  width: 4rem;
+  background-color: #fff; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #e94c2a; }
+  a:hover {
+    text-decoration: none; }
+
+.btn-border {
+  border-radius: 0;
+  border-width: 3px; }
+
+@-webkit-keyframes twinkling {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes twinkling {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  12% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg); }
+  24% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg); }
+  36% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg); }
+  48% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg); }
+  60% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); } }
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  12% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg); }
+  24% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg); }
+  36% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg); }
+  48% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg); }
+  60% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); } }
+
+@-webkit-keyframes jump {
+  0% {
+    top: 20px; }
+  50% {
+    top: 10px; }
+  100% {
+    top: 20px; } }
+
+@keyframes jump {
+  0% {
+    top: 20px; }
+  50% {
+    top: 10px; }
+  100% {
+    top: 20px; } }
+
+.hide-left {
+  opacity: 0;
+  -webkit-transform: translateX(-50px);
+  -ms-transform: translateX(-50px);
+  transform: translateX(-50px);
+  -webkit-transition: all 3s;
+  -o-transition: all 3s;
+  transition: all 3s; }
+  .hide-left.slide-right {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); }
+
+.hide-right {
+  opacity: 0;
+  -webkit-transform: translateX(50px);
+  -ms-transform: translateX(50px);
+  transform: translateX(50px);
+  -webkit-transition: all 4s;
+  -o-transition: all 4s;
+  transition: all 4s; }
+  .hide-right.slide-left {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); }
+
+.hide-top {
+  opacity: 0;
+  -webkit-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  transform: translateY(-50px);
+  -webkit-transition: all 4s;
+  -o-transition: all 4s;
+  transition: all 4s; }
+  .hide-top.slide-down {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+
+.transform-scale {
+  -webkit-transition: all ease-in, 500ms;
+  -o-transition: all ease-in, 500ms;
+  transition: all ease-in, 500ms; }
+  .transform-scale:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
+  @media only screen and (max-width: 767px) {
+    .transform-scale:hover {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1); } }
+
+.rel {
+  position: relative; }
+
+.abs {
+  position: absolute; }
+
+.text-sm {
+  font-size: .8rem; }
+
+@media only screen and (max-width: 767px) {
+  .text-md-black {
+    color: #000 !important; } }
+
+#mainNavbar {
+  -webkit-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out; }
+  #mainNavbar.navbarFloat {
+    border-top: 5px solid #3C3C3C;
+    padding: 5px 8px;
+    -webkit-box-shadow: 0px 5px 15px rgba(60, 60, 60, 0.7);
+    box-shadow: 0px 5px 15px rgba(60, 60, 60, 0.7);
+    opacity: .95; }
+
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+  @media only screen and (max-width: 767px) {
+    .shake {
+      -webkit-animation-name: none;
+      animation-name: none; } }
+
+.cart {
+  position: relative; }
+
+.cartBadge {
+  position: absolute;
+  top: -1px;
+  right: 5px; }
+
+.main {
+  min-height: calc(100vh - (90.9px + 100px + 24px)); }
+
+.homeBg {
+  background-image: url(../img/ibrahim-mohamed-1357312-unsplash.jpg);
+  background-position: bottom center;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.carouselImg {
+  height: 500px; }
+
+.brandHide {
+  visibility: visible;
+  opacity: 0;
+  -webkit-transform: matrix3d(0.0002, 0, 0, 0, 0, 0.0002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  transform: matrix3d(0.0002, 0, 0, 0, 0, 0.0002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  .brandHide.brandShow {
+    opacity: 1;
+    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    -webkit-transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.4s, -webkit-transform 0.6s cubic-bezier(0.5, 0, 0, 1) 0.4s;
+    transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.4s, -webkit-transform 0.6s cubic-bezier(0.5, 0, 0, 1) 0.4s;
+    -o-transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.4s, transform 0.6s cubic-bezier(0.5, 0, 0, 1) 0.4s;
+    transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.4s, transform 0.6s cubic-bezier(0.5, 0, 0, 1) 0.4s;
+    transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.4s, transform 0.6s cubic-bezier(0.5, 0, 0, 1) 0.4s, -webkit-transform 0.6s cubic-bezier(0.5, 0, 0, 1) 0.4s; }
+
+.brandBody {
+  color: #737373;
+  background-color: #f5f5f5; }
+
+.brandCardHover:hover .brandImg {
+  background-color: #fff;
+  opacity: .9; }
+
+.brandCardHover:hover .brandBody {
+  opacity: .9; }
+
+.sectionBrand {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .sectionBrand .brandItemTItle {
+    font-weight: bold; }
+
+.likeIcon {
+  top: 20px;
+  right: 20px;
+  color: pink; }
+  .likeIcon.likeIconLiked {
+    font-weight: bold;
+    -webkit-animation-name: jump;
+    animation-name: jump;
+    -webkit-animation-duration: .2s;
+    animation-duration: .2s; }
+
+.arrowUp {
+  position: fixed;
+  right: 0;
+  bottom: 10%;
+  z-index: 100;
+  width: 45px;
+  height: 72px;
+  padding: 24px 15px;
+  background: rgba(51, 51, 51, 0.7);
+  cursor: pointer; }
+
+html,
+.fullsize {
+  height: 100vh; }
+
+.pb-s {
+  padding-bottom: 10px; }
+
+.fullsize {
+  background-image: url("../img/nattu-adnan-1150339-unsplash.jpg");
+  background-position: center center;
+  background-size: cover; }
+
+.headArea {
+  position: relative;
+  max-height: 20vh; }
+  @media only screen and (max-width: 767px) {
+    .headArea {
+      max-height: none; } }
+
+.btnEnter {
+  position: absolute;
+  right: 0;
+  bottom: 24px; }
+  @media only screen and (max-width: 767px) {
+    .btnEnter {
+      position: relative;
+      bottom: 0;
+      padding-top: 24px; } }
+  .btnEnter .arrow {
+    -webkit-animation-name: twinkling;
+    animation-name: twinkling;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
+
+.welcomePageImg-1 {
+  background-image: url("../img/cristian-palmer-481519-unsplash.jpg");
+  background-position: center center;
+  background-size: cover;
+  min-height: 15vh; }
+
+.welcomePageImg-2 {
+  background-image: url("../img/jcob-nasyr-1389829-unsplash.jpg");
+  background-position: center center;
+  background-size: cover;
+  min-height: 15vh; }
+
+.welcomePageImg-3 {
+  background-image: url("../img/alessandra-caretto-620159-unsplash.jpg");
+  background-position: center center;
+  background-size: cover;
+  min-height: 10vh; }
+
+.welcomePageImg-4 {
+  background-image: url("../img/james-connolly-363041-unsplash.jpg");
+  background-position: center center;
+  background-size: cover; }
+
+.welcomePageImg-5 {
+  background-image: url("../img/toa-heftiba-270794-unsplash.jpg");
+  background-position: center center;
+  background-size: cover;
+  min-height: 20vh; }
+  @media only screen and (max-width: 767px) {
+    .welcomePageImg-5 {
+      max-height: 25vh; } }
+
+.welcomePageImg-6 {
+  background-image: url("../img/sean-o-406693-unsplash.jpg");
+  background-position: center center;
+  background-size: cover;
+  min-height: 20vh; }
+  @media only screen and (max-width: 767px) {
+    .welcomePageImg-6 {
+      max-height: 25vh; } }
+
+.tourStamp {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  opacity: 0;
+  -webkit-transition: opacity 8s, -webkit-transform .5s;
+  transition: opacity 8s, -webkit-transform .5s;
+  -o-transition: opacity 8s, transform .5s;
+  transition: opacity 8s, transform .5s;
+  transition: opacity 8s, transform .5s, -webkit-transform .5s; }
+  .tourStamp.show {
+    opacity: 1; }
+  .tourStamp:hover {
+    -webkit-transform: translate(-5px, -5px);
+    -ms-transform: translate(-5px, -5px);
+    transform: translate(-5px, -5px); }
+
+.box-shadow {
+  border: 0;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+  .box-shadow:hover {
+    border: 10px solid #fff; }
+    @media only screen and (max-width: 767px) {
+      .box-shadow:hover {
+        border: 0; } }
+
+.samuiBg {
+  background-image: url(../img/jcob-nasyr-1389829-unsplash.jpg);
+  background-attachment: fixed;
+  height: 100%;
+  font-weight: bold;
+  font-family: 'cwTeXYen', 'Indie Flower', cursive, serif; }
+
+.subTitleV-center {
+  height: 127.2px;
+  line-height: 127.2px; }
+  @media only screen and (max-width: 767px) {
+    .subTitleV-center {
+      height: auto;
+      line-height: 1rem; } }
+
+.samuiCardRight .samuiTextLeft {
+  left: -300px;
+  top: 15%; }
+
+.samuiCardLeft .samuiTextRight {
+  right: -300px;
+  top: 15%; }
+
+.border-bottom-3 {
+  border-bottom: 3px solid; }
+
+.cartDetailBorder {
+  border-bottom: 3px solid #fbc83c; }
+  @media only screen and (max-width: 767px) {
+    .cartDetailBorder {
+      border: 0; } }
+
+@media only screen and (max-width: 767px) {
+  .phonePriceBorder {
+    border-top: 1px solid #dee2e6;
+    border-bottom: 3px solid #fbc83c; } }
+
+.delet {
+  cursor: pointer; }
+
+.checkoutLine {
+  position: relative;
+  width: 50%;
+  height: 3px;
+  left: 25%;
+  background-color: #fbc83c; }
+
+.checkoutCircle {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #EAF0ED;
+  border: 3px solid #fbc83c;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #ced4da; }
+  .checkoutCircle.checkoutStep1 {
+    left: 0; }
+    .checkoutCircle.checkoutStep1::before {
+      content: "基本資料";
+      position: absolute;
+      width: 4rem;
+      -webkit-transform: translate(-37.5%, 50%);
+      -ms-transform: translate(-37.5%, 50%);
+      transform: translate(-37.5%, 50%); }
+      @media only screen and (max-width: 767px) {
+        .checkoutCircle.checkoutStep1::before {
+          display: none; } }
+  .checkoutCircle.checkoutStep2 {
+    left: 50%; }
+    .checkoutCircle.checkoutStep2::before {
+      content: "付款資料";
+      position: absolute;
+      width: 4rem;
+      -webkit-transform: translate(-37.5%, 50%);
+      -ms-transform: translate(-37.5%, 50%);
+      transform: translate(-37.5%, 50%); }
+      @media only screen and (max-width: 767px) {
+        .checkoutCircle.checkoutStep2::before {
+          display: none; } }
+  .checkoutCircle.checkoutStep3 {
+    left: 100%; }
+    .checkoutCircle.checkoutStep3::before {
+      content: "完成";
+      position: absolute;
+      width: 2rem;
+      -webkit-transform: translate(-25%, 50%);
+      -ms-transform: translate(-25%, 50%);
+      transform: translate(-25%, 50%); }
+      @media only screen and (max-width: 767px) {
+        .checkoutCircle.checkoutStep3::before {
+          display: none; } }
+
+.onStep {
+  width: .5rem;
+  height: .5rem;
+  color: #212529; }
+  .onStep::before {
+    -webkit-transform: translate(-47%, 25%) !important;
+    -ms-transform: translate(-47%, 25%) !important;
+    transform: translate(-47%, 25%) !important; }
+
+.doneStep {
+  background-color: #fbc83c; }
+
+.checkout3Bg {
+  background-image: url(../img/franciele-cunha-596987-unsplash.jpg);
+  height: calc(100vh - 358px);
+  width: auto;
+  background-position: bottom left;
+  background-size: cover; }
+
+.h2-xs {
+  position: relative; }
+  .h2-xs::before {
+    left: -4.5rem; }
+  .h2-xs::after {
+    right: -4.5rem; }
+  @media only screen and (max-width: 767px) {
+    .h2-xs::before {
+      left: -2.5rem;
+      width: 2rem; }
+    .h2-xs::after {
+      right: -2.5rem;
+      width: 2rem; } }
+  @media (max-width: 360px) {
+    .h2-xs {
+      font-size: 2rem; }
+      .h2-xs::before {
+        height: 3px;
+        top: 1rem;
+        -webkit-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+        transform: translateY(50%); }
+      .h2-xs::after {
+        height: 3px;
+        top: 1rem;
+        -webkit-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+        transform: translateY(50%); } }

@@ -1,0 +1,105 @@
+//@keyframes
+@keyframes twinkling {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0);
+    }
+
+    12% {
+        transform: rotate(10deg);
+    }
+
+    24% {
+        transform: rotate(-10deg);
+    }
+
+    36% {
+        transform: rotate(10deg);
+    }
+
+    48% {
+        transform: rotate(-10deg);
+    }
+
+    60% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes jump {
+    0% {
+        top: 20px;
+    }
+
+   	50% {
+        top: 10px;
+    }
+
+    100% {
+        top: 20px;
+    }
+}
+
+.hide-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 3s;
+
+    &.slide-right {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hide-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 4s;
+
+    &.slide-left {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hide-top {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 4s;
+
+    &.slide-down {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+.transform-scale {
+    transition: all ease-in, 500ms;
+
+    &:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    @include pad() {
+        &:hover {
+            transform: scale(1);
+        }
+    }
+}
+
